@@ -1,12 +1,13 @@
 # Python Coding für Risikocontroller
 
-Dieses Repository enthält die Unterlagen zum Kurs ***"Python Coding für Risikocontroller"*** vom 16.03.2018 im Social Impact Lab, Frankfurt
+Dieses Repository enthält die Unterlagen zum Workshop ***"Python Coding für Risikocontroller"*** vom 16.03.2018 im Social Impact Lab, Frankfurt
 
 ---
 
 # Inhaltsverzeichnis
 - [Kursinhalte herunterladen](#download)
 - [Installationshinweise](#installation)
+- [Links zu den Datensätzen](#datasets)
 - [Weitere Informationen](#additional-reading)
 
 ---
@@ -44,7 +45,14 @@ Starten sie hierfür die Kommandozeile und geben folgenden Befehl ein:
 
     pip install pandas matplotlib jupyter
 
+# <a name="datasets"></a> Links zu den Datensätzen
 
+Die im Workshop benutzten Datensätze sind von der Data-Science-Plattform [Kaggle](http://www.kaggle.com).
+
+- [ Kickstarter-Datensatz](https://www.kaggle.com/kemical/kickstarter-projects)  
+- [ Wine-Review-Datensatz](https://www.kaggle.com/zynicide/wine-reviews)
+
+Zum Download der Datensätze muss ein kostenloser Account angelegt werden.
 
 # <a name="additional-reading"></a> Weitere Informationen zu den Kursinhalten
 [Data-Science-Plattform Kaggle](http://www.kaggle.com)
