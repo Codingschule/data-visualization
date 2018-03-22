@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="./css/reveal.css">
+<link rel="stylesheet" href="./css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = './css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="./lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11977,6 +11977,24 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11991,7 +12009,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
 <span class="c1">#y = [i for i in range(20,100,3)]</span>
 <span class="c1">#x = [i for i in range(len(y))]</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
@@ -12015,7 +12033,7 @@ a.anchor-link {
 
 
 <div class="output_text output_subarea ">
-<pre>&lt;matplotlib.figure.Figure at 0x81470b0&gt;</pre>
+<pre>&lt;matplotlib.figure.Figure at 0x8135110&gt;</pre>
 </div>
 
 </div>
@@ -12037,7 +12055,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
 <span class="c1">#y = [i for i in range(20,100,3)]</span>
 <span class="c1">#x = [i for i in range(len(y))]</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
@@ -12085,7 +12103,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
 <span class="c1">#y = [i for i in range(20,100,3)]</span>
 <span class="c1">#x = [i for i in range(len(y))]</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
@@ -12132,7 +12150,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
 <span class="c1">#y = [i for i in range(20,100,3)]</span>
 <span class="c1">#x = [i for i in range(len(y))]</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -12179,11 +12197,9 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
-<span class="c1">#y = [i for i in range(20,100,3)]</span>
-<span class="c1">#x = [i for i in range(len(y))]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">3</span><span class="p">)]</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12193,6 +12209,26 @@ a.anchor-link {
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;boxes&#39;: [&lt;matplotlib.lines.Line2D at 0x9d17c70&gt;],
+ &#39;caps&#39;: [&lt;matplotlib.lines.Line2D at 0x9d1f9d0&gt;,
+  &lt;matplotlib.lines.Line2D at 0x9d1ff90&gt;],
+ &#39;fliers&#39;: [&lt;matplotlib.lines.Line2D at 0x9d24b50&gt;],
+ &#39;means&#39;: [],
+ &#39;medians&#39;: [&lt;matplotlib.lines.Line2D at 0x9d24ab0&gt;],
+ &#39;whiskers&#39;: [&lt;matplotlib.lines.Line2D at 0x9d17d70&gt;,
+  &lt;matplotlib.lines.Line2D at 0x9d1f430&gt;]}</pre>
+</div>
+
+</div>
 
 <div class="output_area">
 
@@ -12226,9 +12262,9 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
-<span class="c1">#y = [i for i in range(20,100,3)]</span>
-<span class="c1">#x = [i for i in range(len(y))]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">3</span><span class="p">)]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">))]</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -12267,9 +12303,17 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Komplexere-Schaubilder">Komplexere Schaubilder<a class="anchor-link" href="#Komplexere-Schaubilder">&#182;</a></h1><ul>
 <li>Bisher haben wir einfache Schaubilder gezeigt</li>
-<li>Matplotlib erlaubt es, so ziemlich alles an einem Schaubild zu manipulieren<center><img src="https://matplotlib.org/_images/anatomy.png" style="height: 50%; width:50%;"><img></center></li>
+<li>Matplotlib erlaubt es, so ziemlich alles an einem Schaubild zu manipulieren<center><img src="https://matplotlib.org/_images/anatomy.png" style="height: 35%; width:35%;"><img></center></li>
 </ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Zwischenaufgaben">Zwischenaufgaben<a class="anchor-link" href="#Zwischenaufgaben">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -12289,7 +12333,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
+<span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 <span class="n">thousand_samples</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)]</span>
 <span class="c1">#print(thousand_samples)</span>
@@ -12313,7 +12358,7 @@ a.anchor-link {
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -12337,11 +12382,12 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">kapital</span> <span class="o">=</span> <span class="mi">50000</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
+<span class="n">kapital</span> <span class="o">=</span> <span class="mi">50000</span>
 <span class="n">zinssatz</span> <span class="o">=</span> <span class="mf">1.05</span>
 <span class="n">jahre</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">)]</span>
-<span class="n">kapitalNachXJahren</span> <span class="o">=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">kapital</span><span class="o">*</span><span class="p">(</span><span class="n">zinssatz</span><span class="o">**</span><span class="n">jahr</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">jahr</span> <span class="ow">in</span> <span class="n">jahre</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">kapitalNachXJahren</span><span class="p">)</span>
+<span class="n">KapitalNachXJahren</span> <span class="o">=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">kapital</span><span class="o">*</span><span class="p">(</span><span class="n">zinssatz</span><span class="o">**</span><span class="n">jahr</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">jahr</span> <span class="ow">in</span> <span class="n">jahre</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">KapitalNachXJahren</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12372,16 +12418,16 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # gibt den Plot in einem neuen Fenster aus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%matplotlib # Zur Anzeige des Plots in separatem Fenster auskommentieren</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
-<span class="n">plot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">jahre</span><span class="p">,</span><span class="n">kapitalNachXJahren</span><span class="p">)</span>
-<span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">jahre</span><span class="p">,</span> <span class="n">kapitalNachXJahren</span><span class="p">)</span>
+<span class="n">plot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">jahre</span><span class="p">,</span><span class="n">KapitalNachXJahren</span><span class="p">)</span>
+<span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">jahre</span><span class="p">,</span> <span class="n">KapitalNachXJahren</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">jahre</span><span class="p">)</span><span class="c1">#Achsen-Tick-Beschriftung</span>
 
 <span class="n">plot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Anzahl Jahre&quot;</span><span class="p">)</span> <span class="c1">#X-Achsen-Beschriftung</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Kapital&quot;</span><span class="p">)</span> <span class="c1">#Y-Achsen-Beschriftung</span>
-<span class="n">plot</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Kapital nach 10 Jahren&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">kapitalNachXJahren</span><span class="p">[</span><span class="mi">10</span><span class="p">]),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">kapitalNachXJahren</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span><span class="o">-</span><span class="mi">10000</span><span class="p">),</span>
+<span class="n">plot</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Kapital nach 10 Jahren&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">KapitalNachXJahren</span><span class="p">[</span><span class="mi">10</span><span class="p">]),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">KapitalNachXJahren</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span><span class="o">-</span><span class="mi">10000</span><span class="p">),</span>
             <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.25</span><span class="p">),</span>
             <span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Kapitalverzinsung von 50000€ bei einem Zinssatz von 5%&quot;</span><span class="p">)</span>
@@ -12414,7 +12460,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div>
+</div></section></section>
 </div>
 </div>
 
@@ -12427,8 +12473,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "./lib/js/head.min.js",
+      "./js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12443,9 +12489,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "./lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "./plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]

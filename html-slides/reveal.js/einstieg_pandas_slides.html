@@ -9,14 +9,14 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Einstieg_Python slides</title>
+<title>Einstieg_Pandas slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="./css/reveal.css">
+<link rel="stylesheet" href="./css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = './css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="./lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11905,59 +11905,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Einstieg-in-Python">Einstieg in Python<a class="anchor-link" href="#Einstieg-in-Python">&#182;</a></h1><p>Operatoren, Variablen, Kontrollstrukturen, Funktionen, Listen</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Was-ist-Python?">Was ist Python?<a class="anchor-link" href="#Was-ist-Python?">&#182;</a></h1><ul>
-<li>moderne Skriptsprache</li>
-<li>plattformunabhängig</li>
-<li>weit verbreitet und quasi überall im Einsatz</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Warum-Python-lernen?">Warum Python lernen?<a class="anchor-link" href="#Warum-Python-lernen?">&#182;</a></h1><ul>
-<li>Einfach zu lesen und lernen<blockquote><p>Python is powerful... and fast;
-plays well with others;
-runs everywhere;
-is friendly &amp; easy to learn;
-is Open.</p>
-</blockquote>
-</li>
-<li>Fokus auf "schnellen" Ergebnissen</li>
-<li>Große Sammlung an Zusatzbibliotheken für alle denkbaren Anwendungsbereiche</li>
-<li>Buchempfehlung:<a href="http://automatetheboringstuff.com"><strong> <em>Automate the boring Stuff with Python</em> </strong></a></li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Zum-Vergleich:-&quot;Hello-World&quot;">Zum Vergleich: "Hello World"<a class="anchor-link" href="#Zum-Vergleich:-&quot;Hello-World&quot;">&#182;</a></h1><p><strong>In Java:</strong></p>
-<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
-
-<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Hello World!&quot;</span><span class="o">);</span>
-<span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
-<p><strong>In Python:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-</pre></div>
+<h1 id="Einstieg-Pandas">Einstieg Pandas<a class="anchor-link" href="#Einstieg-Pandas">&#182;</a></h1><p>große Datensätze analysieren mit Pandas</p>
 
 </div>
 </div>
@@ -11966,7 +11914,16 @@ is Open.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Zahlen-&amp;-Operatoren---Python-als-Taschenrechner">Zahlen &amp; Operatoren - Python als Taschenrechner<a class="anchor-link" href="#Zahlen-&amp;-Operatoren---Python-als-Taschenrechner">&#182;</a></h1>
+<h1 id="Was-ist-Pandas?">Was ist Pandas?<a class="anchor-link" href="#Was-ist-Pandas?">&#182;</a></h1><ul>
+<li>Bibliothek auf Basis von NumPy</li>
+<li>Stellt Datenstrukturen und Tools zur Analyse großer Datenmengen zur Verfügung</li>
+<li>Vorteile ggü. Arbeit mit Excel<ul>
+<li>deutlich performanter</li>
+<li>Open Source, große Community</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 </div></section><section>
@@ -11974,11 +11931,453 @@ is Open.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Datenstrukturen-in-Pandas">Datenstrukturen in Pandas<a class="anchor-link" href="#Datenstrukturen-in-Pandas">&#182;</a></h1><ul>
+<li>Pandas arbeitet mit 2 Datenstrukturen: <code>Series</code> und <code>DataFrames</code><ul>
+<li><code>Series</code>: 1-dimensional mit Label (vgl. Excel-Spalte/Zeile)</li>
+<li><code>DataFrames</code>: 2-dimensional mit N Spalten (vgl. Excel-Tabelle)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Daten-in-Pandas-importieren">Daten in Pandas importieren<a class="anchor-link" href="#Daten-in-Pandas-importieren">&#182;</a></h1><ul>
+<li>Pandas bietet Funktionen um die meisten Datenformate zu importieren<ul>
+<li>Heute: .csv-Daten mithilfe von `read_csv(pfad-zur-datei)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">csv_daten</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../datasets/kundendaten_mock.csv&#39;</span><span class="p">)</span>
+<span class="n">csv_daten</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[1]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>id</th>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>Email</th>
+      <th>Geschlecht</th>
+      <th>Alter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>Owen</td>
+      <td>Lambol</td>
+      <td>olambol0@oaic.gov.au</td>
+      <td>M</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>Cullin</td>
+      <td>Goodwell</td>
+      <td>cgoodwell1@shinystat.com</td>
+      <td>M</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>Weber</td>
+      <td>Majury</td>
+      <td>wmajury2@techcrunch.com</td>
+      <td>M</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>Felipe</td>
+      <td>Prendergrast</td>
+      <td>fprendergrast3@hostgator.com</td>
+      <td>M</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>Helyn</td>
+      <td>Frounks</td>
+      <td>hfrounks4@123-reg.co.uk</td>
+      <td>F</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Einen-&#220;berblick-verschaffen">Einen &#220;berblick verschaffen<a class="anchor-link" href="#Einen-&#220;berblick-verschaffen">&#182;</a></h1><p><em>Hinweis: df steht hier für jeweils einen DataFrame etwa df = read.csv()..</em></p>
 <ul>
-<li>Python unterteilt in: Ganzzahlen (<code>integer</code>) und Fließkommazahlen (<code>float</code>)</li>
-<li>klassiche Rechenoperatoren: <code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>//</code> <code>%</code></li>
-<li>Vergleichsoperatoren: <code>&lt;</code> <code>&lt;=</code> <code>==</code> <code>&gt;=</code> <code>&gt;</code> <code>!=</code></li>
-<li>"Komplexeres" Rechnen über Zusatzbibliotheken etwa <code>import math</code> oder <code>import numpy</code></li>
+<li><code>df.head(n)</code> zeigt die ersten n Zeilen eines DataFrames an, analog <code>df.tail(n)</code></li>
+<li><code>df.sample(n)</code> Stichprobe der Größe n entnehmen</li>
+<li><code>df.sort_values(by=)</code> sortiert Tabelle nach gegebener Spalte</li>
+<li><code>df.describe()</code> zeigt verschiedene Statistiken (Median, usw.) zu den Daten an    </li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># csv_daten.head(10)</span>
+<span class="c1"># csv_daten.tail(10)</span>
+<span class="c1"># csv_daten.sort_values(by=&#39;Alter&#39;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">csv_daten</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+<span class="n">csv_daten</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>       Unnamed: 0          id       Alter
+count  100.000000  100.000000  100.000000
+mean    49.500000   50.500000   43.290000
+std     29.011492   29.011492   19.427303
+min      0.000000    1.000000  -14.000000
+25%     24.750000   25.750000   28.000000
+50%     49.500000   50.500000   41.000000
+75%     74.250000   75.250000   58.000000
+max     99.000000  100.000000   90.000000
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>id</th>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>Email</th>
+      <th>Geschlecht</th>
+      <th>Alter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>74</th>
+      <td>74</td>
+      <td>75</td>
+      <td>Caye</td>
+      <td>Gillyett</td>
+      <td>cgillyett22@pen.io</td>
+      <td>F</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>10</td>
+      <td>Tammy</td>
+      <td>Faraday</td>
+      <td>tfaraday9@1und1.de</td>
+      <td>F</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>70</td>
+      <td>71</td>
+      <td>Dario</td>
+      <td>Massard</td>
+      <td>dmassard1y@gnu.org</td>
+      <td>M</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>40</td>
+      <td>41</td>
+      <td>Bartram</td>
+      <td>Zouch</td>
+      <td>bzouch14@cocolog-nifty.com</td>
+      <td>M</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>9</td>
+      <td>Graig</td>
+      <td>McPhater</td>
+      <td>gmcphater8@ucoz.ru</td>
+      <td>M</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>14</td>
+      <td>Marji</td>
+      <td>Camerana</td>
+      <td>mcameranad@bloglovin.com</td>
+      <td>F</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>78</td>
+      <td>79</td>
+      <td>Stacee</td>
+      <td>Mullenger</td>
+      <td>smullenger26@facebook.com</td>
+      <td>F</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>15</td>
+      <td>Dorisa</td>
+      <td>Knyvett</td>
+      <td>dknyvette@4shared.com</td>
+      <td>F</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>67</td>
+      <td>68</td>
+      <td>Rodd</td>
+      <td>Doncom</td>
+      <td>rdoncom1v@bigcartel.com</td>
+      <td>M</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>55</td>
+      <td>56</td>
+      <td>Staci</td>
+      <td>Slad</td>
+      <td>sslad1j@godaddy.com</td>
+      <td>F</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>82</td>
+      <td>83</td>
+      <td>Iolanthe</td>
+      <td>Labone</td>
+      <td>ilabone2a@netlog.com</td>
+      <td>F</td>
+      <td>-14</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>27</td>
+      <td>28</td>
+      <td>Ivor</td>
+      <td>McDavitt</td>
+      <td>imcdavittr@harvard.edu</td>
+      <td>M</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>96</td>
+      <td>97</td>
+      <td>Merrel</td>
+      <td>Tucsell</td>
+      <td>mtucsell2o@google.nl</td>
+      <td>M</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>35</td>
+      <td>36</td>
+      <td>Lurline</td>
+      <td>Harriman</td>
+      <td>lharrimanz@ucla.edu</td>
+      <td>F</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>89</td>
+      <td>90</td>
+      <td>Abby</td>
+      <td>Pietruszewicz</td>
+      <td>apietruszewicz2h@over-blog.com</td>
+      <td>F</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>24</td>
+      <td>25</td>
+      <td>Karoly</td>
+      <td>Spelsbury</td>
+      <td>kspelsburyo@flavors.me</td>
+      <td>M</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>22</td>
+      <td>23</td>
+      <td>Jeramey</td>
+      <td>Kegan</td>
+      <td>jkeganm@tripod.com</td>
+      <td>M</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>44</td>
+      <td>45</td>
+      <td>Tommy</td>
+      <td>Darwin</td>
+      <td>tdarwin18@kickstarter.com</td>
+      <td>M</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>28</td>
+      <td>29</td>
+      <td>Celine</td>
+      <td>Colpus</td>
+      <td>ccolpuss@gnu.org</td>
+      <td>F</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>84</td>
+      <td>85</td>
+      <td>Derby</td>
+      <td>Hingeley</td>
+      <td>dhingeley2c@alexa.com</td>
+      <td>M</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Daten-selektieren">Daten selektieren<a class="anchor-link" href="#Daten-selektieren">&#182;</a></h1><ul>
+<li>nach Zeile <code>df.loc[1]</code> bzw. Abschnitt <code>df.loc[:10]</code></li>
+<li>nach Spalte <code>df['Alter']</code> bzw. <code>df['Alter'][10:50]</code></li>
+<li>nach Eigenschaften <code>df[df['Geschlecht'] == M</code> oder <code>df.query()</code></li>
 </ul>
 
 </div>
@@ -11989,7 +12388,12 @@ is Open.</p>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">*</span> <span class="mi">7</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#csv_daten.loc[10]</span>
+<span class="c1">#csv_daten.loc[:10]</span>
+<span class="c1">#csv_daten[&#39;Alter&#39;][10:50]</span>
+<span class="c1">#csv_daten[&#39;Email&#39;].sample(10)</span>
+<span class="c1">#csv_daten[csv_daten[&#39;Geschlecht&#39;] == &#39;M&#39;]</span>
+<span class="n">csv_daten</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;Alter &gt; 20&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12006,9 +12410,649 @@ is Open.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>21</pre>
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>id</th>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>Email</th>
+      <th>Geschlecht</th>
+      <th>Alter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>Owen</td>
+      <td>Lambol</td>
+      <td>olambol0@oaic.gov.au</td>
+      <td>M</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>Cullin</td>
+      <td>Goodwell</td>
+      <td>cgoodwell1@shinystat.com</td>
+      <td>M</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>Felipe</td>
+      <td>Prendergrast</td>
+      <td>fprendergrast3@hostgator.com</td>
+      <td>M</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>Helyn</td>
+      <td>Frounks</td>
+      <td>hfrounks4@123-reg.co.uk</td>
+      <td>F</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>6</td>
+      <td>Ode</td>
+      <td>Lambal</td>
+      <td>olambal5@unblog.fr</td>
+      <td>M</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>7</td>
+      <td>Estell</td>
+      <td>Grandison</td>
+      <td>egrandison6@sciencedaily.com</td>
+      <td>F</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>8</td>
+      <td>Jodee</td>
+      <td>Sulman</td>
+      <td>jsulman7@oracle.com</td>
+      <td>F</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>9</td>
+      <td>Graig</td>
+      <td>McPhater</td>
+      <td>gmcphater8@ucoz.ru</td>
+      <td>M</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>10</td>
+      <td>Tammy</td>
+      <td>Faraday</td>
+      <td>tfaraday9@1und1.de</td>
+      <td>F</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>12</td>
+      <td>Thorvald</td>
+      <td>Cobbing</td>
+      <td>tcobbingb@angelfire.com</td>
+      <td>M</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>13</td>
+      <td>Etienne</td>
+      <td>Pasquale</td>
+      <td>epasqualec@rambler.ru</td>
+      <td>M</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>14</td>
+      <td>Marji</td>
+      <td>Camerana</td>
+      <td>mcameranad@bloglovin.com</td>
+      <td>F</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>15</td>
+      <td>Dorisa</td>
+      <td>Knyvett</td>
+      <td>dknyvette@4shared.com</td>
+      <td>F</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15</td>
+      <td>16</td>
+      <td>Wait</td>
+      <td>Guess</td>
+      <td>wguessf@domainmarket.com</td>
+      <td>M</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>17</td>
+      <td>Lynne</td>
+      <td>Keedwell</td>
+      <td>lkeedwellg@biblegateway.com</td>
+      <td>F</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>18</td>
+      <td>Ermin</td>
+      <td>Kennally</td>
+      <td>ekennallyh@blogspot.com</td>
+      <td>M</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>19</td>
+      <td>Borg</td>
+      <td>Feedome</td>
+      <td>bfeedomei@arstechnica.com</td>
+      <td>M</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19</td>
+      <td>20</td>
+      <td>Bogey</td>
+      <td>Penburton</td>
+      <td>bpenburtonj@home.pl</td>
+      <td>M</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20</td>
+      <td>21</td>
+      <td>Eduard</td>
+      <td>Truse</td>
+      <td>etrusek@com.com</td>
+      <td>M</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>21</td>
+      <td>22</td>
+      <td>Kasper</td>
+      <td>Verchambre</td>
+      <td>kverchambrel@scientificamerican.com</td>
+      <td>M</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>22</td>
+      <td>23</td>
+      <td>Jeramey</td>
+      <td>Kegan</td>
+      <td>jkeganm@tripod.com</td>
+      <td>M</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>23</td>
+      <td>24</td>
+      <td>Terrijo</td>
+      <td>MacGilrewy</td>
+      <td>tmacgilrewyn@yelp.com</td>
+      <td>F</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>24</td>
+      <td>25</td>
+      <td>Karoly</td>
+      <td>Spelsbury</td>
+      <td>kspelsburyo@flavors.me</td>
+      <td>M</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>25</td>
+      <td>26</td>
+      <td>Elia</td>
+      <td>Coulman</td>
+      <td>ecoulmanp@reuters.com</td>
+      <td>M</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>26</td>
+      <td>27</td>
+      <td>Madelin</td>
+      <td>Frankcomb</td>
+      <td>mfrankcombq@cargocollective.com</td>
+      <td>F</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>27</td>
+      <td>28</td>
+      <td>Ivor</td>
+      <td>McDavitt</td>
+      <td>imcdavittr@harvard.edu</td>
+      <td>M</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>28</td>
+      <td>29</td>
+      <td>Celine</td>
+      <td>Colpus</td>
+      <td>ccolpuss@gnu.org</td>
+      <td>F</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>29</td>
+      <td>30</td>
+      <td>Roderich</td>
+      <td>Ellgood</td>
+      <td>rellgoodt@telegraph.co.uk</td>
+      <td>M</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>30</td>
+      <td>31</td>
+      <td>Court</td>
+      <td>Iggulden</td>
+      <td>cigguldenu@msu.edu</td>
+      <td>M</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>31</td>
+      <td>32</td>
+      <td>Tadeo</td>
+      <td>Scowcraft</td>
+      <td>tscowcraftv@virginia.edu</td>
+      <td>M</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>68</td>
+      <td>69</td>
+      <td>Tomkin</td>
+      <td>Samter</td>
+      <td>tsamter1w@miibeian.gov.cn</td>
+      <td>M</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>69</td>
+      <td>70</td>
+      <td>Lizbeth</td>
+      <td>Vannoort</td>
+      <td>lvannoort1x@flickr.com</td>
+      <td>F</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>70</td>
+      <td>71</td>
+      <td>Dario</td>
+      <td>Massard</td>
+      <td>dmassard1y@gnu.org</td>
+      <td>M</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>71</td>
+      <td>72</td>
+      <td>Alicia</td>
+      <td>Huckin</td>
+      <td>ahuckin1z@jalbum.net</td>
+      <td>F</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>72</td>
+      <td>73</td>
+      <td>Bea</td>
+      <td>Parfrey</td>
+      <td>bparfrey20@wordpress.org</td>
+      <td>F</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>73</td>
+      <td>74</td>
+      <td>Rudiger</td>
+      <td>Bircher</td>
+      <td>rbircher21@hibu.com</td>
+      <td>M</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>74</td>
+      <td>75</td>
+      <td>Caye</td>
+      <td>Gillyett</td>
+      <td>cgillyett22@pen.io</td>
+      <td>F</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>75</td>
+      <td>76</td>
+      <td>Abbot</td>
+      <td>Flecknell</td>
+      <td>aflecknell23@ca.gov</td>
+      <td>M</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>76</td>
+      <td>77</td>
+      <td>Lalo</td>
+      <td>Riccardini</td>
+      <td>lriccardini24@utexas.edu</td>
+      <td>M</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>77</td>
+      <td>78</td>
+      <td>Nathan</td>
+      <td>Carson</td>
+      <td>ncarson25@vk.com</td>
+      <td>M</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>78</td>
+      <td>79</td>
+      <td>Stacee</td>
+      <td>Mullenger</td>
+      <td>smullenger26@facebook.com</td>
+      <td>F</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>79</td>
+      <td>80</td>
+      <td>Pearline</td>
+      <td>Deverose</td>
+      <td>pdeverose27@spotify.com</td>
+      <td>F</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>81</td>
+      <td>82</td>
+      <td>Haleigh</td>
+      <td>Huyge</td>
+      <td>hhuyge29@123-reg.co.uk</td>
+      <td>F</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>83</td>
+      <td>84</td>
+      <td>Robena</td>
+      <td>Thomazet</td>
+      <td>rthomazet2b@opera.com</td>
+      <td>F</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>84</td>
+      <td>85</td>
+      <td>Derby</td>
+      <td>Hingeley</td>
+      <td>dhingeley2c@alexa.com</td>
+      <td>M</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>85</td>
+      <td>86</td>
+      <td>Mireille</td>
+      <td>Scothorn</td>
+      <td>mscothorn2d@toplist.cz</td>
+      <td>F</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>86</td>
+      <td>87</td>
+      <td>Cherin</td>
+      <td>Bariball</td>
+      <td>cbariball2e@webnode.com</td>
+      <td>F</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>87</td>
+      <td>88</td>
+      <td>Lazar</td>
+      <td>Ealles</td>
+      <td>lealles2f@about.com</td>
+      <td>M</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>88</td>
+      <td>89</td>
+      <td>Sidonia</td>
+      <td>Gilgryst</td>
+      <td>sgilgryst2g@clickbank.net</td>
+      <td>F</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>89</td>
+      <td>90</td>
+      <td>Abby</td>
+      <td>Pietruszewicz</td>
+      <td>apietruszewicz2h@over-blog.com</td>
+      <td>F</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>90</td>
+      <td>91</td>
+      <td>Ardis</td>
+      <td>Winchcum</td>
+      <td>awinchcum2i@dropbox.com</td>
+      <td>F</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>91</td>
+      <td>92</td>
+      <td>Gibb</td>
+      <td>Folkes</td>
+      <td>gfolkes2j@youku.com</td>
+      <td>M</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>92</td>
+      <td>93</td>
+      <td>Prent</td>
+      <td>Hutchins</td>
+      <td>phutchins2k@ustream.tv</td>
+      <td>M</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>93</td>
+      <td>94</td>
+      <td>Bealle</td>
+      <td>Shearsby</td>
+      <td>bshearsby2l@com.com</td>
+      <td>M</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>94</td>
+      <td>95</td>
+      <td>Milly</td>
+      <td>O' Quirk</td>
+      <td>moquirk2m@phpbb.com</td>
+      <td>F</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>95</td>
+      <td>96</td>
+      <td>Cacilie</td>
+      <td>Talks</td>
+      <td>ctalks2n@w3.org</td>
+      <td>F</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>96</td>
+      <td>97</td>
+      <td>Merrel</td>
+      <td>Tucsell</td>
+      <td>mtucsell2o@google.nl</td>
+      <td>M</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>97</td>
+      <td>98</td>
+      <td>Iris</td>
+      <td>Bountiff</td>
+      <td>ibountiff2p@nymag.com</td>
+      <td>F</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>98</td>
+      <td>99</td>
+      <td>Blondie</td>
+      <td>Wallenger</td>
+      <td>bwallenger2q@i2i.jp</td>
+      <td>F</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>99</td>
+      <td>100</td>
+      <td>Blondell</td>
+      <td>Meins</td>
+      <td>bmeins2r@gravatar.com</td>
+      <td>F</td>
+      <td>51</td>
+    </tr>
+  </tbody>
+</table>
+<p>92 rows × 7 columns</p>
+</div>
 </div>
 
 </div>
@@ -12021,25 +13065,48 @@ is Open.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Strings---Arbeiten-mit-Text">Strings - Arbeiten mit Text<a class="anchor-link" href="#Strings---Arbeiten-mit-Text">&#182;</a></h1><ul>
-<li>Strings sind Zeichenketten wie etwa <code>"Hello World!"</code></li>
-<li>Python bietet <strong>Funktionen</strong> um etwa:<ul>
-<li>Textinformationen zu erhalten zB. : <code>isalnum()</code> , <code>istitle()</code> , <code>count()</code></li>
-<li>Text zu bearbeiten/manipulieren: <code>lower()</code> <code>strip()</code> <code>replace("o","i")</code></li>
+<h1 id="Abschlussaufgabe:-Explorativ-Datens&#228;tze-analysieren">Abschlussaufgabe: Explorativ Datens&#228;tze analysieren<a class="anchor-link" href="#Abschlussaufgabe:-Explorativ-Datens&#228;tze-analysieren">&#182;</a></h1><ul>
+<li>Als Abschlussaufgabe für den heutigen Tag haben wir 2 Datensätze vorbereitet<ul>
+<li>"Wine review"-Datensatz</li>
+<li>Kickstarter-Datensatz</li>
 </ul>
 </li>
-<li><div style="font-size:60px;"><b>Tipp: Druck auf TAB zeigt mögliche Methoden</b></div></li>
+<li>Entnommen von der Plattform <a href="https://www.kaggle.com/">Kaggle</a><ul>
+<li><a href="https://www.kaggle.com/kemical/kickstarter-projects">https://www.kaggle.com/kemical/kickstarter-projects</a></li>
+<li><a href="https://www.kaggle.com/zynicide/wine-reviews">https://www.kaggle.com/zynicide/wine-reviews</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Kickstarter-Datensatz">Kickstarter-Datensatz<a class="anchor-link" href="#Kickstarter-Datensatz">&#182;</a></h1><ul>
+<li>Crowdfunding-Plattform <a href="https://www.kickstarter.com/">Kickstarter</a></li>
+<li>~300.000 Datensätze zu Kickstarterprojekten</li>
+<li>Metadaten wie:<ul>
+<li>Projektname</li>
+<li>Projektkategorie</li>
+<li>erfragte Summe</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;Hello World&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">kickstarter</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../datasets/kickstarter-projects/ks-projects-201801.csv&#39;</span><span class="p">)</span>
+<span class="n">kickstarter</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12056,9 +13123,156 @@ is Open.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>ID</th>
+      <td>1000002330</td>
+      <td>1000003930</td>
+      <td>1000004038</td>
+      <td>1000007540</td>
+      <td>1000011046</td>
+    </tr>
+    <tr>
+      <th>name</th>
+      <td>The Songs of Adelaide &amp; Abullah</td>
+      <td>Greeting From Earth: ZGAC Arts Capsule For ET</td>
+      <td>Where is Hank?</td>
+      <td>ToshiCapital Rekordz Needs Help to Complete Album</td>
+      <td>Community Film Project: The Art of Neighborhoo...</td>
+    </tr>
+    <tr>
+      <th>category</th>
+      <td>Poetry</td>
+      <td>Narrative Film</td>
+      <td>Narrative Film</td>
+      <td>Music</td>
+      <td>Film &amp; Video</td>
+    </tr>
+    <tr>
+      <th>main_category</th>
+      <td>Publishing</td>
+      <td>Film &amp; Video</td>
+      <td>Film &amp; Video</td>
+      <td>Music</td>
+      <td>Film &amp; Video</td>
+    </tr>
+    <tr>
+      <th>currency</th>
+      <td>GBP</td>
+      <td>USD</td>
+      <td>USD</td>
+      <td>USD</td>
+      <td>USD</td>
+    </tr>
+    <tr>
+      <th>deadline</th>
+      <td>2015-10-09</td>
+      <td>2017-11-01</td>
+      <td>2013-02-26</td>
+      <td>2012-04-16</td>
+      <td>2015-08-29</td>
+    </tr>
+    <tr>
+      <th>goal</th>
+      <td>1000</td>
+      <td>30000</td>
+      <td>45000</td>
+      <td>5000</td>
+      <td>19500</td>
+    </tr>
+    <tr>
+      <th>launched</th>
+      <td>2015-08-11 12:12:28</td>
+      <td>2017-09-02 04:43:57</td>
+      <td>2013-01-12 00:20:50</td>
+      <td>2012-03-17 03:24:11</td>
+      <td>2015-07-04 08:35:03</td>
+    </tr>
+    <tr>
+      <th>pledged</th>
+      <td>0</td>
+      <td>2421</td>
+      <td>220</td>
+      <td>1</td>
+      <td>1283</td>
+    </tr>
+    <tr>
+      <th>state</th>
+      <td>failed</td>
+      <td>failed</td>
+      <td>failed</td>
+      <td>failed</td>
+      <td>canceled</td>
+    </tr>
+    <tr>
+      <th>backers</th>
+      <td>0</td>
+      <td>15</td>
+      <td>3</td>
+      <td>1</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>country</th>
+      <td>GB</td>
+      <td>US</td>
+      <td>US</td>
+      <td>US</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <th>usd pledged</th>
+      <td>0</td>
+      <td>100</td>
+      <td>220</td>
+      <td>1</td>
+      <td>1283</td>
+    </tr>
+    <tr>
+      <th>usd_pledged_real</th>
+      <td>0</td>
+      <td>2421</td>
+      <td>220</td>
+      <td>1</td>
+      <td>1283</td>
+    </tr>
+    <tr>
+      <th>usd_goal_real</th>
+      <td>1533.95</td>
+      <td>30000</td>
+      <td>45000</td>
+      <td>5000</td>
+      <td>19500</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12066,17 +13280,21 @@ is Open.</p>
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Funktionen---Bitte-mach-was!">Funktionen - Bitte mach was!<a class="anchor-link" href="#Funktionen---Bitte-mach-was!">&#182;</a></h1><ul>
-<li>ähnlich wie in der Mathematik: Eingabe -&gt; (Ausgabe)</li>
-<li>built-in Funktionen wie <code>min()</code> , <code>max()</code>, <code>type()</code></li>
-<li><code>print()</code> gibt etwas auf der Konsole aus</li>
-<li><code>input()</code> nimmt Benutzereingabe entgegen</li>
-<li>Strings, Zahlen, spätere Klassen die wir kennenlernen stellen eigene Funktionen</li>
+<h1 id="Wine-Review-Datensatz">Wine-Review-Datensatz<a class="anchor-link" href="#Wine-Review-Datensatz">&#182;</a></h1><ul>
+<li>Datensatz mit Weinbewertungen von der Plattform <a href="https://www.winemag.com/">WineEnthusiast</a></li>
+<li>~130.000 Datensätze mit Weinbewertungen</li>
+<li>Metadaten wie:<ul>
+<li>Beschreibung des Sommeliers (blumig, erdig usw.)</li>
+<li>Herkunftsland/-region</li>
+<li>Winzer</li>
+<li>Bewertung auf einer Punkteskala</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -12087,7 +13305,9 @@ is Open.</p>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">wine_reviews</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../datasets/wine-reviews/winemag-data_first150k.csv&#39;</span><span class="p">)</span>
+<span class="n">wine_reviews</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12104,9 +13324,124 @@ is Open.</p>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>13</pre>
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Unnamed: 0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>country</th>
+      <td>US</td>
+      <td>Spain</td>
+      <td>US</td>
+      <td>US</td>
+      <td>France</td>
+    </tr>
+    <tr>
+      <th>description</th>
+      <td>This tremendous 100% varietal wine hails from ...</td>
+      <td>Ripe aromas of fig, blackberry and cassis are ...</td>
+      <td>Mac Watson honors the memory of a wine once ma...</td>
+      <td>This spent 20 months in 30% new French oak, an...</td>
+      <td>This is the top wine from La Bégude, named aft...</td>
+    </tr>
+    <tr>
+      <th>designation</th>
+      <td>Martha's Vineyard</td>
+      <td>Carodorum Selección Especial Reserva</td>
+      <td>Special Selected Late Harvest</td>
+      <td>Reserve</td>
+      <td>La Brûlade</td>
+    </tr>
+    <tr>
+      <th>points</th>
+      <td>96</td>
+      <td>96</td>
+      <td>96</td>
+      <td>96</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>235</td>
+      <td>110</td>
+      <td>90</td>
+      <td>65</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>province</th>
+      <td>California</td>
+      <td>Northern Spain</td>
+      <td>California</td>
+      <td>Oregon</td>
+      <td>Provence</td>
+    </tr>
+    <tr>
+      <th>region_1</th>
+      <td>Napa Valley</td>
+      <td>Toro</td>
+      <td>Knights Valley</td>
+      <td>Willamette Valley</td>
+      <td>Bandol</td>
+    </tr>
+    <tr>
+      <th>region_2</th>
+      <td>Napa</td>
+      <td>NaN</td>
+      <td>Sonoma</td>
+      <td>Willamette Valley</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>variety</th>
+      <td>Cabernet Sauvignon</td>
+      <td>Tinta de Toro</td>
+      <td>Sauvignon Blanc</td>
+      <td>Pinot Noir</td>
+      <td>Provence red blend</td>
+    </tr>
+    <tr>
+      <th>winery</th>
+      <td>Heitz</td>
+      <td>Bodega Carmen Rodríguez</td>
+      <td>Macauley</td>
+      <td>Ponzi</td>
+      <td>Domaine de la Bégude</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -12119,295 +13454,18 @@ is Open.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Zwischenaufgaben">Zwischenaufgaben<a class="anchor-link" href="#Zwischenaufgaben">&#182;</a></h1><ol>
-<li>Schreiben sie ein Programm, dass:<ul>
-<li>Den Benutzer nach seinem Namen und Alter fragt</li>
-<li>Den Namen + das Alter in Sekunden wieder ausgibt</li>
+<h1 id="Aufgabe:">Aufgabe:<a class="anchor-link" href="#Aufgabe:">&#182;</a></h1><ol>
+<li>Importieren sie die .csv-Daten in ihr Jupyter Notebook</li>
+<li>Verschaffen sie sich einen Überblick über den Datensatz<ul>
+<li>(<code>head()</code>, <code>describe()</code>, <code>sample(n)</code>)</li>
 </ul>
 </li>
+<li>Überlegen sie sich Hypothesen, die sie unterstützen möchten</li>
+<li>Untersuchen sie die Hypothesen und visualisieren die Ergebnisse</li>
 </ol>
 
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Kontrollstrukturen---Programmablauf-steuern">Kontrollstrukturen - Programmablauf steuern<a class="anchor-link" href="#Kontrollstrukturen---Programmablauf-steuern">&#182;</a></h1><ul>
-<li><p>Kontrollstrukturen steuern, in welcher Reihenfolge Code läuft</p>
-<ul>
-<li><p><em>Wenn der Benutzer einen Knopf drückt, mache ..</em></p>
-<p>-&gt; <strong>Bedingungen</strong> <code>if</code> <code>elif</code> <code>else</code></p>
-</li>
-<li><em>Wiederhole 100x mal</em> oder <em>Für jeden Benutzer mache folgendes..</em><br>
--&gt; <strong>Schleifen</strong> : <code>for</code> <code>while</code></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">beispielwort</span> <span class="o">=</span> <span class="s2">&quot;Lausbub&quot;</span>  
-<span class="k">for</span> <span class="n">buchstabe</span> <span class="ow">in</span> <span class="n">beispielwort</span><span class="p">:</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">buchstabe</span> <span class="o">==</span> <span class="s1">&#39;b&#39;</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">buchstabe</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Lausxux</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Listen---Daten-strukturiert-ablegen">Listen - Daten strukturiert ablegen<a class="anchor-link" href="#Listen---Daten-strukturiert-ablegen">&#182;</a></h1><ul>
-<li>Listen dienen dazu Datenmengen strukturiert abzulegen ~vgl. Exceltabelle</li>
-<li>Listen werden mit [ ] erzeugt, Elemente werden mit Komma getrennt<ul>
-<li><code>freunde = ['anna', 'bill', 'claude']</code></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freunde</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;anna&#39;</span><span class="p">,</span> <span class="s1">&#39;bill&#39;</span><span class="p">,</span> <span class="s1">&#39;claude&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">freunde</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;anna&#39;, &#39;bill&#39;, &#39;claude&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Listen-anlegen">Listen anlegen<a class="anchor-link" href="#Listen-anlegen">&#182;</a></h1><ol>
-<li><p>Liste manuell</p>
-<ul>
-<li><code>list_numbers = [1,2,3,4,5,6,7,8,9,10]</code></li>
-</ul>
-</li>
-<li><p>Liste mit einer Schleife und <code>append()</code> anlegen</p>
-
-<pre><code> list_numbers = []
- for number in range(1,11):
-     list_numbers.append(number)</code></pre>
-</li>
-<li><p>Liste mittels List Comprehension anlegen</p>
-<p><code>list_numbers = [number for number in range(1,11)]</code></p>
-</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list_numbers</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1001</span><span class="p">):</span>
-    <span class="n">list_numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">list_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">])</span>
- 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quadratzahlen</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">101</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">quadratzahlen</span><span class="p">)</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961, 1024, 1089, 1156, 1225, 1296, 1369, 1444, 1521, 1600, 1681, 1764, 1849, 1936, 2025, 2116, 2209, 2304, 2401, 2500, 2601, 2704, 2809, 2916, 3025, 3136, 3249, 3364, 3481, 3600, 3721, 3844, 3969, 4096, 4225, 4356, 4489, 4624, 4761, 4900, 5041, 5184, 5329, 5476, 5625, 5776, 5929, 6084, 6241, 6400, 6561, 6724, 6889, 7056, 7225, 7396, 7569, 7744, 7921, 8100, 8281, 8464, 8649, 8836, 9025, 9216, 9409, 9604, 9801, 10000]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#220;bungsaufgaben:">&#220;bungsaufgaben:<a class="anchor-link" href="#&#220;bungsaufgaben:">&#182;</a></h1><ol>
-<li>Erzeugen sie eine Liste aller ungeraden Zahlen von 1-20:<ul>
-<li>manuell</li>
-<li>per Schleife</li>
-<li>List Comprehension</li>
-</ul>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">number</span><span class="o">%</span><span class="k">3</span> == 0):
-        <span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="o">*</span><span class="n">number</span><span class="p">)</span>
-
-    
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-        
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[9, 36, 81, 144, 225, 324, 441, 576, 729, 900, 1089, 1296, 1521, 1764, 2025, 2304, 2601, 2916, 3249, 3600, 3969, 4356, 4761, 5184, 5625, 6084, 6561, 7056, 7569, 8100, 8649, 9216, 9801]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div></section></section>
 </div>
 </div>
@@ -12421,8 +13479,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "./lib/js/head.min.js",
+      "./js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12437,9 +13495,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "./lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "./plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
