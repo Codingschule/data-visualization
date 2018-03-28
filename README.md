@@ -6,6 +6,7 @@ Dieses Repository enthält die Unterlagen zum Workshop ***"Python Coding für Ri
 
 # Inhaltsverzeichnis
 - [Kursinhalte herunterladen](#download)
+  - [Links Online Slides](#online-slides)
 - [Installationshinweise](#installation)
 - [Links zu den Datensätzen](#datasets)
 - [Weitere Informationen](#additional-reading)
@@ -17,6 +18,13 @@ Dieses Repository enthält die Unterlagen zum Workshop ***"Python Coding für Ri
 Zum Herunterladen der Kursinhalte einfach auf die Schaltfläche *Download as .zip*
 klicken.
 Möchten sie vorher einen Blick auf die Dateien wählen, klicken sie *View on Github* an.
+
+### <a name="online-slides"></a> Links zu den Online-Slides
+
+- [Einstieg in die Kommandozeile](https://codingschule.github.io/data-visualization/html-slides/reveal.js/einstieg_kommandozeile_slides.html)
+- [Einstieg in Python](https://codingschule.github.io/data-visualization/html-slides/reveal.js/einstieg_python_slides.html)
+- [Einstieg in Pandas](https://codingschule.github.io/data-visualization/html-slides/reveal.js/einstieg_pandas_slides.html)
+- [Einstieg in matplotlib](https://codingschule.github.io/data-visualization/html-slides/reveal.js/einstieg_matplotlib_slides.html)
 
 # <a name="installation"></a> Installationshinweise
 
