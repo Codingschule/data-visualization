@@ -1,4 +1,6 @@
-# Python Coding für Risikocontroller
+# Programmieren lernen, Lösungen finden
+
+## Python Coding für Risikocontroller
 
 Dieses Repository enthält die Unterlagen zum Workshop ***"Python Coding für Risikocontroller"*** vom 16.03.2018 im Social Impact Lab, Frankfurt
 
@@ -12,6 +14,8 @@ Dieses Repository enthält die Unterlagen zum Workshop ***"Python Coding für Ri
 - [Weitere Informationen](#additional-reading)
 
 ---
+
+
 
 ## <a name="download"></a> Kursinhalte herunterladen
 
